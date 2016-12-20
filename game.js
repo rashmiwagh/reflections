@@ -421,7 +421,7 @@ Ship = function () {
     }
     if (KEY_STATUS.space) {
       if (this.delayBeforeBullet <= 0) {
-        for (var i = 0; i < this.bullets.length; i++) {
+        for (var  i = 0; i < this.bullets.length; i++) {
           if (!this.bullets[i].visible) {
             SFX.laser();
             var bullet = this.bullets[i];
@@ -492,7 +492,7 @@ BigAlien = function () {
   this.bridgesH = false;
 
   this.bullets = [];
-  this.delayBeforeBullet = 0;
+  this.delayBeforeBullet = 10;
 
   this.newPosition = function () {
     if (Math.random() < 0.5) {
